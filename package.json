@@ -1,0 +1,71 @@
+{
+  "name": "react-native-nitro-key-shortcuts",
+  "version": "0.1.0",
+  "description": "Hardware-keyboard shortcuts and Ctrl+scroll zoom events for React Native on iOS and Android, built with Nitro Modules.",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "lib/index",
+  "module": "lib/index",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "react-native.config.js",
+    "lib",
+    "nitrogen",
+    "android/build.gradle",
+    "android/gradle.properties",
+    "android/fix-prefab.gradle",
+    "android/CMakeLists.txt",
+    "android/src",
+    "ios/**/*.h",
+    "ios/**/*.m",
+    "ios/**/*.mm",
+    "ios/**/*.swift",
+    "jest",
+    "nitro.json",
+    "*.podspec",
+    "README.md"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf android/build lib",
+    "build": "tsc",
+    "specs": "tsc && nitrogen --logLevel=\"debug\""
+  },
+  "keywords": [
+    "react-native",
+    "nitro",
+    "keyboard",
+    "shortcuts",
+    "hardware-keyboard",
+    "ipad",
+    "ios",
+    "android"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "nitrogen": "0.35.4",
+    "react": "19.2.0",
+    "react-native": "0.83.1",
+    "react-native-nitro-modules": "0.35.4",
+    "typescript": "^5.9.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-nitro-modules": ">=0.35.0"
+  },
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "semi": false
+  }
+}
